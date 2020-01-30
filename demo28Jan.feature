@@ -1,9 +1,9 @@
 Feature: Pixel store pos
 
-  Background:
-     Given sales executive logged into the machine
-   
-   @RegressionTest
+  Background: 
+    Given sales executive logged into the machine
+
+  @RegressionTest
   Scenario: Executive signup
     Given executive is at the signup registration
     When executive provide "admin" and "admin"
@@ -14,8 +14,8 @@ Feature: Pixel store pos
     Given executive added the items to cart
     When items price is calculated
     Then bill is generated with final amount
-    
-    @FunctionalTest
+
+  @FunctionalTest
   Scenario Outline: Sales executive signIn
     When Sales executive provides "<user>" and "<password>" as credentials
     Then Login is successful
@@ -23,8 +23,8 @@ Feature: Pixel store pos
     Examples: 
       | user    | password    |
       | Lalitha | password123 |
-      | John    | Ravi123     |
-    
+      | John    | Ravi1234    |
+
   @Datadriven
   Scenario: Search for product
     Given Larry searches for products in the search field
