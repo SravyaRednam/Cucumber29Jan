@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: batchTest.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.682 sec <<< FAILURE!
+Search for product(Pixel store pos)  Time elapsed: 0.104 sec  <<< ERROR!
+java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Training_H2A.09.22\Desktop\Week3\SelBrowser\chromedriver.exe
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:137)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:132)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:156)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:346)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:91)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at browserutil.DriverUtil.getDriver(DriverUtil.java:15)
+	at stepGlue.StepDef.sales_executive_logged_into_the_machine(StepDef.java:24)
+	at ?.sales executive logged into the machine(file:demo28Jan.feature:4)
+
